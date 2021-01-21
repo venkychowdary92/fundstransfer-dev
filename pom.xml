@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+	<groupId>com.sap.cloud.servicesdk.prov</groupId>
+	<artifactId>projects-parent-odatav2</artifactId>
+	<version>1.14.2</version>
+  </parent>
+
+  <artifactId>fundstransfer-dev</artifactId>
+  <groupId>ICICI_Dev</groupId>
+  <version>1.0-SNAPSHOT</version>
+
+  <packaging>war</packaging>
+  <name>Gateway Runtime Reference Content: Java Project for DevX</name>
+
+  <properties>
+    <sap.gateway.version>1.14.2</sap.gateway.version>
+    <packageName>ICICI_Dev</packageName>
+  </properties>
+
+	<build>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+	</build>
+
+</project>

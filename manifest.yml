@@ -1,0 +1,10 @@
+---
+applications:
+  - name: fundstransfer-dev
+    memory: 512M
+    buildpack: sap_java_buildpack
+    path: target/fundstransfer-dev-1.0-SNAPSHOT.war  
+    services:
+    - 1
+    env:
+      destinations: '[{name: "ODataEndPoint", url: "ODataServerURL", username: "UserID", password: "Password"}]'
